@@ -171,3 +171,12 @@ cp ca.crt client.crt client.key example/ada/
 cd example/ada/
 cargo run --bin daisyway -- exchange --config config.toml
 ```
+
+## Acknowledgments
+
+This project was developed by [Karolin Varner](https://github.com/koraa)
+([Rosenpass e.V.](https://rosenpass.eu)) and [Paul
+Spooren](https://github.com/aparcar) ([Hochschule
+Nordhausen](http://hs-nordhausen.de)), partly funded by the European
+Commission and the BMFTR (Bundesministerium für Forschung, Technologie und
+Raumfahrt) - formally BMWF.
