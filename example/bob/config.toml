@@ -1,0 +1,17 @@
+[peer]
+listen = "127.0.0.1:5556" # Address:Port for Daisyway binding
+psk_file = "../psk.key"   # (optional) Path to file containing the pre-shared key
+
+[etsi014]
+url = "http://localhost:12345" # ETSI014 API address
+#interval_secs = 120 # (optional) If the ETSI014 API provides less than 1 key every 120 seconds, increase the interval appropriately.
+remote_sae_id = "sae_ada" # Identifier for the "SAE" intended for communication
+
+[wireguard]
+# interface = "wg0"                                                # Interface name
+peer_public_key = "5+l6TWvUJr2jCCqqyeSwExPriW74khDQvompp+xHe4Q=" # Public key of the peer
+self_public_key = "GOJt/mfPuwoUiKD+hARpxuDtnzJOWkcK0Tq+sxxw4UQ=" # Public key of the self
+
+# Alternative to specifying interface above
+[outfile]
+path = "/tmp/outfile.bob"

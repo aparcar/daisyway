@@ -1,0 +1,22 @@
+[peer]
+endpoint = "127.0.0.1:5556" # Address:Port for Daisyway peer binding
+psk_file = "../psk.key"     # (optional) Path to file containing the pre-shared key
+
+[etsi014]
+#endpoint = "https://localhost:8443"      # ETSI014 API address
+url = "http://localhost:12345" # ETSI014 API address
+remote_sae_id = "SAE_002"      # Identifier for the "SAE" intended for communication
+#interval_secs = 120 # (optional) If the ETSI014 API provides less than 1 key every 120 seconds, increase the interval appropriately.
+#tls_cert = "TQLD3Alice_8.1/client.crt"
+#tls_key = "TQLD3Alice_8.1/client.pem"
+#tls_cacert = "TQLD3Alice_8.1/rootCA.crt"
+#danger_allow_insecure_no_server_name_certificates = true
+
+[wireguard]
+# interface = "wg0"                                                # Interface name
+peer_public_key = "GOJt/mfPuwoUiKD+hARpxuDtnzJOWkcK0Tq+sxxw4UQ=" # Public key of the peer
+self_public_key = "5+l6TWvUJr2jCCqqyeSwExPriW74khDQvompp+xHe4Q=" # Public key of the self
+
+# Alternative to specifying interface above
+[outfile]
+path = "/tmp/outfile.ada"
